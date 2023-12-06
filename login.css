@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+body {
+  box-sizing: border-box;
+  text-align: center;
+  background: rgb(38, 49, 74);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+h1 {
+  color: rgb(38, 49, 74);
+  font-size: 1.3rem;
+  font-weight: 700;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgb(213 213 213);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.form-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.bi {
+  background-color: rgb(44, 62, 102);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  z-index: 1;
+}
+
+form {
+  text-align: center;
+  width: 25vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  background-color: rgb(213 213 213);
+  border-radius: 32px;
+
+  padding: 2rem;
+
+}
+
+input{
+  width: 100%;
+  height:34px;
+  margin: 8px auto;
+  border: none;
+  outline: none;
+  color:#000;
+  font-size: 16px;
+  padding: 7px;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .3);
+
+}
+
+
+
+.page-subtitle {
+  font-size: 1.5em;
+  color: #ffffff;
+  margin-top: 510x;
+}
+
+
+
+button {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  color: #ffffff;
+  background: rgb(38, 49, 74);
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 1.3em;
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 8px auto;
+  overflow: hidden;
+  user-select: none;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+.active {
+  border: 2px solid red;
+}
+
+/* Definición de la animación llamada shake */
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0); /* Sin desplazamiento en el inicio y al final */
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px); /* Desplazamiento a la izquierda en estos momentos */
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px); /* Desplazamiento a la derecha en estos momentos */
+  }
+}
+
+/* Aplicar la animación a un elemento con la clase "elemento-a-agitar" */
+.active {
+  border: 2px solid red;
+  animation: shake 0.6s;
+}
