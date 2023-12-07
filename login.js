@@ -12,7 +12,7 @@ function enviarInfo(event) {
   let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
   if (emailRegex.test(email.value) && datosDeUsuarios('josetrucktrailer29@gmail.com', '1234')) {
-    fetch('http://localhost:3000/login', {
+    fetch('https://https://wtshop-login.netlify.app', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -22,6 +22,7 @@ function enviarInfo(event) {
         password: password.value
       }),
     })
+    
       .then(response => response.json())
       .then(data => {
         if (data.success) {

@@ -8,10 +8,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use(cors({
-  origin: 'http://127.0.0.1:5500',
+  origin: 'https://wtshop-login.netlify.app',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
 }));
+
 
 app.options('/', cors()); // Habilita preflight requests para la raíz
 
