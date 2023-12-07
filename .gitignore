@@ -1,3 +1,2 @@
-/.VSCODE
-/node_module
-/presentacion.png
+node_modules/
+package-lock.json
