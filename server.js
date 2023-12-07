@@ -14,8 +14,6 @@ app.use(cors({
 }));
 
 
-app.options('/', cors()); // Habilita preflight requests para la raíz
-
 
 // Ruta para la raíz
 app.get('/', (req, res) => {
