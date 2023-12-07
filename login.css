@@ -109,7 +109,7 @@ input{
 
 ::placeholder {
   color: #fff;
-  font-size: 18px;
+  font-size: 13px;
 }
 
 
@@ -155,11 +155,12 @@ button:hover {
   opacity: 0.7;
 }
 
-
-
 .active {
   border: 2px solid red;
+  animation: shake 0.6s;
 }
+
+
 
 /* Definición de la animación llamada shake */
 @keyframes shake {
@@ -175,10 +176,7 @@ button:hover {
 }
 
 /* Aplicar la animación a un elemento con la clase "elemento-a-agitar" */
-.active {
-  border: 2px solid red;
-  animation: shake 0.6s;
-}
+
 
 
 /*** MEDIA QUERIES ***/
